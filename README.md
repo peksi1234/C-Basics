@@ -6,4 +6,4 @@ Logical Error uppgift 1
 - Lösning av problmet
 - Jag fixade så att max börjar med det första talet, och så kollar programmet om det nuvarande talet är större än max.
 
-- 
+  
