@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ArrayMultiplication
 {
@@ -8,13 +8,11 @@ namespace ArrayMultiplication
         {
             int Counter = 1;
 
-
             while (Counter <= 5)
             {
-                Console.WriteLine($"Counter: {Counter}");
+                Console.WriteLine($"Counter: {Counter * 7}");
                 Counter++;
             }
-
 
             switch (Counter)
             {
