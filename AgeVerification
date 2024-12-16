@@ -1,21 +1,38 @@
-﻿using System;
+using System;
 
-namespace AgeVerificationAndControlFlow
+namespace AgeVerification
 {
     internal class Program
     {
+        const int LegalAge = 18;
+
         static void Main(string[] args)
         {
+            Console.Write("Enter your age: ");
+            string input = Console.ReadLine();
+            if (int.TryParse(input, out int Age))
+            {
+                if (Age >= LegalAge)
+                {
+                    Console.WriteLine("You are an adult.");
+                }
+                else
+                {
+                    Console.WriteLine("You are under the legal age.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid age.");
+                return;
+            }
 
             int Counter = 1;
 
-            Console.WriteLine("Loop output:");
+            Console.WriteLine("\nLoop output:");
             while (Counter <= 5)
             {
-
                 Console.WriteLine($"Counter value: {Counter}");
-
-
                 Counter++;
             }
 
@@ -37,16 +54,13 @@ namespace AgeVerificationAndControlFlow
                 case 5:
                     Console.WriteLine("Five");
                     break;
-                default:
-                    Console.WriteLine("Invalid number");
-                    break;
+                
             }
 
             var name = "John";
-
-            Console.WriteLine($"\nWelcome, {name}! The loop ran and counted up to 5. The switch statement result was based on the final Counter value.");
-
+            Console.WriteLine($"\nWelcome, {name}! The loop counted to 5, and the switch statement executed based on the final Counter value.");
             Console.ReadLine();
         }
     }
 }
+
