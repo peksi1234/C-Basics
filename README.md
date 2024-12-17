@@ -6,6 +6,12 @@ Logical Error uppgift 1
   - Lösning av problmet
   - Jag fixade så att max börjar med det första talet, och så kollar programmet om det nuvarande talet är större än max.
 
+    Logical Error 2 uppgift
+  - Jag ändrade ordningen så att vi börjar med det högsta värdet (age > 50) och går neråt:
+  - if (age > 50)
+  - else if (age > 30)
+  - else if (age > 18)
+
 Logical Error uppgift 3
   - Vad var problemet?
   - Problemet va att loopen körde ett steg för långt. Du hadde i <= numbers.Length, men i en array börjar index från 0 å slutar vid Length - 1.
