@@ -6,7 +6,7 @@ Logical Error uppgift 1
   - Lösning av problmet
   - Jag fixade så att max börjar med det första talet, och så kollar programmet om det nuvarande talet är större än max.
 
-    Logical Error 2 uppgift
+Logical Error 2 uppgift
   - Jag ändrade ordningen så att vi börjar med det högsta värdet (age > 50) och går neråt:
   - if (age > 50)
   - else if (age > 30)
